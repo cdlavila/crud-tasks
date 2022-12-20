@@ -5,12 +5,15 @@ const schema = require('./schema');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('GraphQL is amazing!');
+  res.send('GraphQL is amazing!');
 })
 
 app.use('/graphql', graphqlHTTP({
-    graphiql: true,
-    schema
+  graphiql: true,
+  schema,
+  context: {
+    messageId: 'test'
+  }
 }));
 
 const port = 3000;
