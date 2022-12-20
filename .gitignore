@@ -1,2 +1,4 @@
 .idea
+./firebase-credentials.json
 ./node_modules
+.env

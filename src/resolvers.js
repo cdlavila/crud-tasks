@@ -1,20 +1,38 @@
-const tasks = require('./sample');
+const { Task } = require('./models/index');
 
 const resolvers = {
+  Mutation: {
+    // Create a new task
+    async createTask(_, { input}) {
+      return await Task.create(input);
+    },
+
+    // Update a task
+    async updateTask(_, { id, input }) {
+      return await Task.update(id, input);
+    },
+
+    // Delete a task
+    async deleteTask(_, { id }) {
+      return await Task.delete(id);
+    }
+  },
+
   Query: {
     hello: () => 'Hello world with GraphQL!',
+
     greet(root, args, context) {
       return `Hello ${args.name}!, ${context.messageId}`;
     },
-    tasks() {
-      return tasks;
+
+    // Get all tasks
+    async getAllTasks() {
+      return await Task.getAll();
     },
-  },
-  Mutation: {
-    createTask(_, { input }) {
-      input.id = tasks?.length + 1;
-      tasks.push(input);
-      return input;
+
+    // Get one task
+    async getTask(_, { id }) {
+      return await Task.getOne(id);
     }
   }
 }
