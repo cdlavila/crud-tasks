@@ -27,7 +27,7 @@ $ npm run local
 ```
 
 #### Step 5
-Check server is running, by clicking on the first link that appears in the terminal
+Check server is running, by clicking on the first link that appears in the terminal.
 
 #### Step 6
-Testing GraphQL queries in the browser using the second link that appears in the terminal
+Testing GraphQL queries in the browser using the second link that appears in the terminal.
