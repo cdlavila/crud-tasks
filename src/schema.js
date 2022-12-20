@@ -1,5 +1,5 @@
 const resolvers = require('./resolvers');
-const { makeExecutableSchema } = require('graphql-tools');
+const { makeExecutableSchema } = require('@graphql-tools/schema');
 
 const typeDefs = `
     type Query {
