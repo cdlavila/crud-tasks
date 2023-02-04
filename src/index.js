@@ -20,5 +20,5 @@ app.use('/graphql', graphqlHTTP({
 const port = 3000;
 app.listen(port, () => {
   console.log(`App listening on http://localhost:${port}`)
-  console.log(`GraphQL is running on http://localhost:${port}/graphql`)
+  console.log(`GraphQL API is running on http://localhost:${port}/graphql`)
 });
