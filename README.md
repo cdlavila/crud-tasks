@@ -1,26 +1,26 @@
-# CRUD Tasks
-Basic CRUD for Tasks using Express + GraphQL + Firebase realtime database.
+# Tasks
+GraphQL API for a task management application created with [Node.js](https://nodejs.org/en/), [Express.js](https://expressjs.com/), [GraphQL](https://graphql.org/) and [Firebase Database](https://firebase.google.com/).
 
 ## Installation
 To install the project, follow the next steps:
 
 #### Step 1
-Clone the project
+Clone the project.
 ```bash
 $ git clone https://github.com/cdlavila/crud-tasks
 ```
 
 #### Step 2
-Duplicate the `.env.example` file and rename it to `.env`. Then, put your environment variables here.
+Duplicate the `.env.example` file and rename it to `.env`. Then, fill in the environment variables.
 
 #### Step 3
-Install dependencies
+Install dependencies.
 ```bash
 $ npm install
 ```
 
 #### Step 4
-Run the server
+Run the server.
 
 ```bash
 $ npm run local
